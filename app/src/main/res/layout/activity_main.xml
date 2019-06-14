@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/download">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/fresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FreshMart"
+                    android:textSize="36sp"
+                    android:padding="16dp"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_centerHorizontal="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:src="@drawable/s"
+                    android:id="@+id/img"
+                    android:layout_below="@id/fresh"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img"
+                    android:padding="16dp"
+                    android:text="Your one stop destination for all your daily needs!"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/ch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/des"
+                    android:padding="16dp"
+                    android:text="Give us a chance to serve you!!"
+                    android:layout_centerHorizontal="true"/>
+                <EditText
+                    android:id="@+id/e1"
+                    android:layout_below="@id/ch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Name"
+                    android:layout_centerHorizontal="true"/>
+                <EditText
+                    android:id="@+id/e2"
+                    android:layout_below="@id/e1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Mobile no."
+                    android:layout_centerHorizontal="true"/>
+                <EditText
+                    android:id="@+id/e3"
+                    android:layout_below="@id/e2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="locality"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_below="@id/e3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button"
+                    android:text="Shop from wide variety of quality product at great prices."
+                    android:layout_centerHorizontal="true"/>
+                <ImageView
+                    android:src="@drawable/grocery"
+                    android:id="@+id/gro"
+                    android:layout_below="@id/t1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp" />
+                <ImageView
+                    android:src="@drawable/chocolates"
+                    android:id="@+id/cho"
+                    android:layout_below="@id/t1"
+                    android:layout_toRightOf="@id/gro"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp" />
+                <ImageView
+                    android:src="@drawable/dailyneeds"
+                    android:id="@+id/dai"
+                    android:layout_below="@id/gro"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp" />
+
+                <ImageView
+                    android:id="@+id/per"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/gro"
+                    android:layout_toRightOf="@id/dai"
+                    android:src="@drawable/perishables" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/per"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="FreshMart\n12B M.G. Lane\nNew Delhi\nAll DAY\n7:00 A.M. to 10:00 P.M."/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
